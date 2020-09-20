@@ -1,0 +1,41 @@
+﻿* {
+    margin: 0: padding: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 20 px;
+}
+
+.register {
+    background:;
+    width: 500px;
+    margin: 0px 0px 0px 430px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#register {
+    margin-left: 50px;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+.bar {
+    background:;
+    width: 500px;
+    margin: 0px 0px 0px 800px;
+    color: white;
+    font-size: 18px;
+    padding: 40px;
+    border-radius: 10px;
+}
+#bar{
+    margin-left:100 px;
+}

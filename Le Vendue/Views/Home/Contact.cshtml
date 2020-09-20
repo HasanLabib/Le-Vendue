@@ -1,8 +1,71 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
+<link href="@Url.Content("~/Content/Template/contact.css")" rel="stylesheet" type="text/css" />
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <div class="title">
+        <h1>Contact Us</h1>
+    </div>
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="dis">
+            We thrive to ensure that you get the most out of your  experience which is why we provide the best-in-class customer service across a wide range of platforms, designed keeping your convenience in mind. Connect with us in any of our customer service platform below:If you are a user you can use probable keywords through USSD Chatbot to get desired services by simply dialing *666# and typing your desired service name, for e.g. data, minute, balance, etc.
+
+        </div>
+    </div>
+</div>
+
+<body>
+
+    <div class="contact-us">
+
+        <div class="form">
+            <div class="form-items">
+                <input type="text" class="input" placeholder="Username">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-items">
+                <input type="text" class="input" placeholder="Email">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-items">
+                <textarea class="input message" cols="30" rows="10" placeholder="Message....."></textarea>
+            </div>
+
+        </div>
+
+        <div class="btn">
+            Text Now
+            <i class="fas fa-arrow-right"></i>
+        </div>
+
+
+        <div class="social-icons">
+            <div class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="twitter">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="google">
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
 
 <address>
     One Microsoft Way<br />
@@ -12,6 +75,6 @@
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Support:</strong>   <a href="mailto:levendue@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>

@@ -1,0 +1,109 @@
+﻿.header {
+    margin-top: 30px;
+}
+
+.head-text {
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+.search-icon {
+    position: relative;
+    left: 22px;
+    z-index: 9;
+    top: 3px;
+}
+
+.search-bar {
+    position: absolute;
+    width: 90%;
+    border-radius: 18px;
+}
+
+/*------- hamburger start ----*/
+.topnav {
+    background-color: #ffffff;
+    color: #f3eeee;
+    position: relative;
+}
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: 1px solid black;
+        font-size: 17px;
+        display: block;
+    }
+
+        .topnav a.icon {
+            background: whitte;
+            background-color: white;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: 1px solid black;
+            color: black;
+        }
+
+        .topnav a:hover {
+            background-color: #18bcd6;
+            color: black;
+        }
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*------- hamburger end ----*/
+
+.image-margin {
+    border-radius: 50%;
+    margin-top: 125px;
+}
+
+.form-1 {
+    margin-top: 85px;
+}
+
+.sub-btn {
+    background-color: #16dc16;
+    border: 1px solid #16dc16;
+    padding: 5px 10px;
+}
+
+.wid-btn {
+    background-color: #16dc16;
+    border: 1px solid #16dc16;
+    padding: 5px 10px;
+}
+
+.frm-2 {
+    margin-top: 60px;
+}
+
+.footer {
+    margin-top: 70px;
+}
+
+.footer-border {
+    border: 1px solid black;
+    padding: 45px;
+}
+
+.footer-btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px 12px;
+}
+
+.footer-margin {
+    margin-top: 45px;
+}

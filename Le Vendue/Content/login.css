@@ -1,0 +1,15 @@
+﻿
+
+.loginbox {
+    background:;
+    width: 500px;
+    margin: 0px 0px 0px 430px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#loginbox {
+    margin-left: 50px;
+}

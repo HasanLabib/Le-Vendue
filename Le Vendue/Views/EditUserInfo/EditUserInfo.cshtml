@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "EditUserInfo";
+}
+
+
+
+@Styles.Render("~/Content/Template/EditUserInfo.css")"
+<link rel="stylesheet" href="EditUserInfo.css">
+<div class="title">
+    <h3>Edit Your Information</h3>
+
+    <p>Upload Profile Picture</p>
+</div>
+
+
+
+<button class="button">Choose File</button>
+<div class="contact-us">
+
+    <div class="form">
+        <p>Enter Your Name</p>
+        <div class="form-items">
+            <input type="text" class="input" placeholder=" Edit your Username">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="form">
+            <p>Enter Your Email</p>
+            <div class="form-items">
+                <input type="email" class="input" placeholder="Edit your Email">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form">
+                <p> Enter Your Password</p>
+                <div class="form-items">
+
+                    <input type="Password" class="input" placeholder="Edit Password">
+                    <i class="fas fa-user"></i>
+                    <p>Shipping Address</p>
+                    <div class="form-items">
+                        <textarea class="input message" cols="30" rows="10" placeholder="Ex:320,Bel Air,California"></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="form">
+                <form action="#" class="ws-validate">
+                    <div class="form-row hide-inputbtns">
+                        <label for="birthdate">Date of Birth</label>
+                        <input class="birthdate" type="date" placeholder="YYYY-MM-DD" data-date-split-input="true" />
+
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" />
+                    </div>
+                </form>
+
+
+
+
+
+
+            </div>
+
+
+

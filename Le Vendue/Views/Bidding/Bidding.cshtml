@@ -1,0 +1,265 @@
+﻿
+@{
+    ViewBag.Title = "Bidding";
+}
+@Styles.Render("~/Content/Template/bidding.css")"
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Auction Le Vendue</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <p class="head-text">Le Vendue</p>
+                </div>
+                <div class="col-md-4">
+
+                    <form>
+                        <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                        <input type="text" placeholder="" name="search2" class="search-bar">
+
+
+                    </form>
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="">
+
+                        <div class="topnav">
+
+                            <div id="myLinks2">
+
+                                <a href="#contact">MyDashBoard</a>
+                                <a href="#about">Edit User info</a>
+                                <a href="#about">Change Email</a>
+                                <a href="#about">Change Password</a>
+                                <a href="#about">Logout</a>
+                            </div>
+                            <a href="javascript:void(1);" class="icon" onclick="myFunction2()">
+                                <p>Ming Xionai</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-3">
+                    <div class="">
+
+                        <div class="topnav">
+
+                            <div id="myLinks">
+
+                                <a href="#contact">About Us</a>
+                                <a href="#about">Contact Us</a>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="watch">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="~/Content/Template//watch.jpg" class="img-fluid image-margin">
+
+                </div>
+            </div>
+
+
+
+            <div class="row form-1">
+                <div class="col-md-5">
+
+<textarea name="comment" form="usrform" style="width: 240px;height: 100px;">Product Description</textarea>
+                </div>
+                <div class="col-md-5">
+                    <form>
+                        <input type="text" name="" placeholder="Starting Price" style="margin-bottom: 22px;width: 50%;">
+                    </form>
+                    <form>
+                        <input type="text" name="" placeholder="Highest Bid" style="margin-bottom: 22px;width: 50%;">
+                    </form>
+                    <form>
+                        <input type="text" name="" placeholder="bid amount" style="margin-bottom: 22px;width: 50%;">
+                    </form>
+
+
+
+
+                    <button class="sub-btn">Submit</button>
+                    <button class="wid-btn"><b>Withdraw</b></button>
+                </div>
+            </div>
+
+
+
+            <div class="row frm-2">
+                <div class="col-md-12">
+                    <textarea name="comment" form="usrform" style="width: 70%;height: 100px;">Product Description</textarea>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-border">
+                <div class="col-md-2">
+                    <img src="~/Content/Template//mobile.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-3 footer-margin">
+                    <p>Shop With Confidence</p>
+                    <p>Since 2002,LiveAuctioneers has made exceptional items available for sale purchase in secure online auctions.</p>
+                </div>
+                <div class="col-md-5 footer-margin">
+                    <img src="~/Content/Template//logo.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-2 footer-margin">
+                    <p>Company</p>
+                    <button class="footer-btn">About</button>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function myFunction2() {
+            var y = document.getElementById("myLinks2");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>
+<!--
+<link href="@Url.Content("~/Content/Template/bidding.css")" rel="stylesheet" type="text/css" />
+<h2>Bidding</h2>
+<div>
+    <p><img src="~/Content/Template/le.jpg"></p>
+    <p>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+
+        </ul>
+    </p>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" style="{width:5px;height:5px;}">
+            <div class="card">
+                <img src="~/Content/Template/bidd.jpg">
+                <p>gg</p>
+            </div>
+        </div>
+        <div class="col-sm-6" style=" {width:5px;height:5px;}">
+            <div class="card">
+
+
+                <form method="post">
+                    <div class="container">
+                        <form method="post">
+                            <label for="Product Name">Product Name: </label><br>
+                            <input type="text" id="Product Name" name="Product Name" placeholder="Product Name"><br>
+                            <label for="Product Details">Product Details</label><br>
+                            <input type="text" id="Product Details" name="Password" placeholder="Product Details"><br>
+                            <label for="ClosingTime"> ClosingTime</label><br>
+                            <input type="text" id="ClosingTime" name="ClosingTime" placeholder="ClosingTime Details"><br>
+
+                            <label for="HighestbidPrice">HighestbidPrice:</label><br>
+                            <input type="text" id="HighestbidPrice" name=" HighestbidPrice" placeholder=" HighestbidPrice"><br>
+                            <label for=" Bid"> Bid</label><br>
+                            <input type="text" id="Bid" name="Bid" placeholder="Bid"><br>
+
+
+                        </form>
+                        <button style="color:aqua" type="submit" name="Register">Register</button><br />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    -->
