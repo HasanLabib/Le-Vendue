@@ -9,6 +9,7 @@ namespace Le_Vendue.Models
     public class Bidding
     {
         public String UserId { get; set; }
+        public String AuctionId { get; set; }
         public String ProductName { get; set; }
         public String ProductDetails { get; set; }
         public DateTime ClosingTime { get; set; }

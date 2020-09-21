@@ -117,6 +117,26 @@ namespace Le_Vendue.Controllers
             SetResponse setResponse = client.Set(@"AuctionCreate/" + auctionCreate.AuctionId, auctionCreate);
             return View();
         }
+
+        public ActionResult BiddingOnDatabase(Bidding bidding)
+        {
+            var biddingData = bidding;
+            //  PushResponse pushResponse = client.Push("Register/", registerData);
+            // registerData.RegisterID = pushResponse.Result.name;
+            if (client == null)
+            {
+                getClient();
+            }
+
+            FirebaseResponse getResponse = client.Get(@"AuctionCreate/" + bidding.AuctionId);
+
+            //var getAuctionnumberResponse = client.Get(@"Auctionnumber");
+            //var Auctionnumber = int.Parse(getAuctionnumberResponse.ResultAs<string>());
+
+            // SetResponse setAuctionnumberResponse = client.Set(@"Auctionnumber", ++Auctionnumber);
+            // SetResponse setResponse = client.Set(@"AuctionCreate/" + auctionCreate.AuctionId, auctionCreate);
+            return View();
+        }
     }
 }
 //https://console.firebase.google.com/u/0/project/auctionsite-1119f/database/auctionsite-1119f/data
