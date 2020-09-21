@@ -57,7 +57,7 @@
             <div class="col-md-3 left-border">
                 <img src="~/Content/Template/logo-1.png" class="logo">
                 <p class="text-margin">Account </p>
-                <p class="text-margin"><a href="~/AuctionCreate/AuctionCreate.cshtml">Create Auction</a></p>
+                <p class="text-margin"><input class="log-btn" " type="button" value="Create Auction" onclick="@("window.location.href='" + @Url.Action("AuctionCreate", "AuctionCreate") + "'");" /></p>
                 <p class="text-margin">Support</p>
                 <button class="lg-btn">Log Out</button>
             </div>

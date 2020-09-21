@@ -131,7 +131,8 @@
                                         <input type="text" id="ClosingTime" name="ClosingTime" value="20-6-2020 02:12" readonly><br>
 
                                         <label for="HighestbidPrice">HighestbidPrice:</label><br>
-                                        <input type="text" id="HighestbidPrice" name=" HighestbidPrice" value="" readonly><br>
+                                        @{DatabaseController databaseController = new DatabaseController(); }
+                                        <input type="text" id="HighestbidPrice" name=" HighestbidPrice" value="@DatabaseController.GetHighbid()" readonly><br>
                                         <label for=" Bid"> Bid</label><br>
                                         <input type="text" id="Bid" name="BidValue" placeholder="Bid"><br>
                                         <button style="color:aqua" type="submit" name="Submit">Submit</button><br />

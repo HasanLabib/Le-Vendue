@@ -121,9 +121,10 @@ namespace Le_Vendue.Controllers
             SetResponse setResponse = client.Set(@"AuctionCreate/" + auctionCreate.AuctionId, auctionCreate);
             return View();
         }
-
+        public static int HighBid;
         public ActionResult BiddingOnDatabase(Bidding bidding)
         {
+
             var biddingData = bidding;
             //  PushResponse pushResponse = client.Push("Register/", registerData);
             // registerData.RegisterID = pushResponse.Result.name;
@@ -131,7 +132,16 @@ namespace Le_Vendue.Controllers
             {
                 getClient();
             }
-            SetResponse setBidResponse = client.Set(@"Bid", biddingData);
+            var getHighestbid = client.Get(@"Bid");
+
+            var HighestBid = getHighestbid.ResultAs<Bidding>();
+            HighBid = int.Parse(HighestBid.BidValue);
+            if (HighBid < int.Parse(bidding.BidValue))
+            {
+                SetResponse setBidResponse = client.Set(@"Bid", biddingData);
+            }
+
+
             //bidding.ProductName = auction.ProductName;
             // bidding.ProductDetails = auction.ProductDetails;
             // bidding.ReserveValue = auction.SetReservePrice;
@@ -143,6 +153,13 @@ namespace Le_Vendue.Controllers
             // SetResponse setAuctionnumberResponse = client.Set(@"Auctionnumber", ++Auctionnumber);
             // SetResponse setResponse = client.Set(@"AuctionCreate/" + auctionCreate.AuctionId, auctionCreate);
             return View();
+        }
+        public static int GetHighbid()
+        {
+
+
+
+            return HighBid;
         }
     }
 }
