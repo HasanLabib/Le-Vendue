@@ -1,0 +1,155 @@
+﻿
+.button {
+    background-color: #f4511e;
+    border: 3px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 300px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 200px;
+    width: 200px;
+}
+
+    .button:hover {
+        opacity: 1
+    }
+
+.button1 {
+    background-color: #f4511e;
+    border: 3px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 200px;
+    width: 200px;
+}
+
+    .button1:hover {
+        opacity: 1
+    }
+
+.button2 {
+    background-color: #f4511e;
+    border: 3px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    margin-left: 200px;
+    width: 200px;
+}
+
+    .button2:hover {
+        opacity: 1
+    }
+
+.button3 {
+    background-color: #f4511e;
+    border: 3px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -210px;
+    margin-bottom: 30px;
+    margin-right: 1100px;
+    margin-left: 1100px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+    .button3:hover {
+        opacity: 1
+    }
+
+.button4 {
+    background-color: #f4511e;
+    border: 3px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 1100px;
+    margin-left: 1100px;
+    width: 200px;
+}
+
+    .button4:hover {
+        opacity: 1
+    }
+
+.button5 {
+    background-color: #f4511e;
+    border: 3px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 700px;
+    margin-left: 700px;
+    width: 200px;
+}
+
+    .button5:hover {
+        opacity: 1
+    }
+
+.container {
+    margin-top: 100px;
+    margin-bottom: -460px;
+    margin-right: 100px;
+    margin-left: 600px;
+    letter-spacing: 1px;
+}

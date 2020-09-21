@@ -1,0 +1,201 @@
+﻿@using Le_Vendue.Models
+@{
+    ViewBag.Title = "AuctionCreate";
+}
+@Styles.Render("~/Content/Template/AuctionCreate.css")"
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<title>Account Form</title>
+
+
+<header class="header">
+    <div class="container header-border">
+        <div class="row">
+
+            <div class="col-md-2">
+                <p class="header-text">AUCTION</p>
+
+            </div>
+
+            <div class="col-md-6">
+                <form>
+                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                    <input type="text" placeholder="" name="search2" class="search-bar">
+
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="create-text">CREATE AUCTION</p>
+            </div>
+        </div>
+        <form method="post">
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-md-2 offset-md-3">
+                    <p><b>ADD IMAGE</b></p>
+                </div>
+                <div class="col-md-4 add-image">
+                    <p>Double click to add image</p>
+                </div>
+            </div>
+
+            
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-md-2 offset-md-3 ">
+                    <p><b> <label for="Product Name">Product Name: </label></b></p>
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" name="ProductName" placeholder="Product Name" style="width: 100%;">
+                </div>
+            </div>
+
+
+
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-md-2 offset-md-3 ">
+                    <p><b>ITEM QUANTITY</b></p>
+                </div>
+                <div class="col-md-4 ">
+                    <input type="" name="" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-md-2 offset-md-3">
+                    <p><b><label for="Product Details">Product Details</label></b></p>
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" name="ProductDetails" placeholder="Product Details" style="width: 100%;">
+                </div>
+
+
+
+            </div>
+
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-md-2 offset-md-3">
+                    <p><b><label for="Reserve Price"> Reserve Price</label></b></p>
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" name="SetReservePrice" placeholder="Reserve Price" style="width: 100%;">
+                </div>
+
+
+                <br>
+                <input><br>
+
+
+            </div>
+
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-md-2 offset-md-3">
+                    <p><b><label for="Closing Time"> ClosingTime</label></b></p>
+                </div>
+                <div class="col-md-4 ">
+                    <input type="datetime" name="ClosingTime" placeholder="ClosingTime Details" style="width: 100%;"><br />
+                    <br />
+                    @{ var AuctionIdCreate = UniqueIdGenerator.generateUniqueID();}
+                    <input type="hidden" name="AuctionId" value="@AuctionIdCreate" />
+                    <button class="sub-btn">SUBMIT</button>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+</header>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row footer-border">
+            <div class="col-md-2">
+                <img src="~/Content/Template/mobile.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-3 footer-margin">
+                <p>Shop With Confidence</p>
+                <p>Since 2002,LiveAuctioneers has made exceptional items available for sale purchase in secure online auctions.</p>
+            </div>
+            <div class="col-md-5 footer-margin">
+                <img src="~/Content/Template/logo.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-2 footer-margin">
+                <p>Company</p>
+                <button class="footer-btn">About</button>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<h2>AuctionCreate</h2>
+
+<div class="container">
+    <form method="post">
+        <label for="Product Name">Product Name: </label><br>
+        <input type="text" name="ProductName" placeholder="Product Name"><br>
+        <label for="Product Details">Product Details</label><br>
+        <input type="text" name="ProductDetails" placeholder="Product Details"><br>
+        <label for="Closing Time"> ClosingTime</label><br>
+        <input type="datetime" name="ClosingTime" placeholder="ClosingTime Details"><br>
+        <label for="Reserve Price"> Reserve Price</label><br>
+        <input type="text" name="SetReservePrice" placeholder="Reserve Price"><br>
+        
+        <input type="hidden" name="AuctionId" value="" />
+        <button style="background-color:aqua" type="submit" name="Register">Register</button><br />
+    </form>
+
+
+
+</div>
+    -->
