@@ -28,3 +28,5 @@
 14.We were abble to get the bid value and update it in database.We retrive the Highest bid value  but unable to update the highest bid value.The highest bid value always shows 0
 
 15.The bid value gets updated in the database if it is the highest
+
+#If it still doesn't work try removing Le vendue.Test and again build the solution
