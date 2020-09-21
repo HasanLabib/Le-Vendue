@@ -1,7 +1,7 @@
 # Le-Vendue
 1.Use visual Studio 2017
 
-2.Don't need to add anything
+2.Need to add nuget packages (Antlr,bootstrap,Carbon.Packaging,Carbon.Storage,Carbon.VersionControl,Newtonsoft.Json,EntityFramework,Microsoft.AspNet.Mvc,jQuery,FireSharp,GitHub,jQuery.Validation,Microsoft.AspNet.Razor,Microsoft.AspNet.Web.Optimization,Microsoft.AspNet.WebPages,Microsoft.Bcl,Microsoft.Bcl.Async,Microsoft.Bcl.AsyncInterfaces,Microsoft.Bcl.HashCode,Microsoft.CodeDom.Providers.DotNetCompilerPlatform,Microsoft.jQuery.Unobtrusive.Validation,Microsoft.Net.Http,Microsoft.Web.Infrastructure,Newtonsoft.Json,popper.js,System.Buffers,System.Memory,System.Numerics.Vectors,System.Runtime.CompilerServices.Unsafe,System.Text.Encodings.Web,System.Text.Json,System.Threading.Tasks.Extensions)
 
 3.Run the project 
 
