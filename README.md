@@ -1,5 +1,6 @@
 # Le-Vendue
 1.Use visual Studio 2017
+
 2.Don't need to add anything
 3.Run the project 
 4.To bid click bid button
