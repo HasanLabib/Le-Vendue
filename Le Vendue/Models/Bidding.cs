@@ -8,22 +8,18 @@ namespace Le_Vendue.Models
 {
     public class Bidding
     {
-        public String UserId { get; set; }
-        public String AuctionId { get; set; }
-        public String ProductName { get; set; }
-        public String ProductDetails { get; set; }
-        public DateTime ClosingTime { get; set; }
-        public String ReserveValue { get; set; }
-        public String HighestBidValue { get; set; }
+
+
+        public String BidValue { get; set; }
 
     }
-
 
     public class BidSyncronize : Bidding
     {
         private static BidSyncronize bidSyncronize;
         private BidSyncronize()
         {
+
         }
         [MethodImpl(MethodImplOptions.Synchronized)]//For synronizing
         public static BidSyncronize GetBidSyncronizeInstance()

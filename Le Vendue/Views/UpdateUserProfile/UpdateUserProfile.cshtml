@@ -2,63 +2,73 @@
 @{
     ViewBag.Title = "UpdateUserProfile";
 }
-
+<link href="@Url.Content("~/Content/Template/registration.css")" rel="stylesheet" type="text/css" />
 <h2>Register</h2>
+<body background="~/Content/Template/1.jpg">
+    <div class="bar">
+        <button>Register<font color=green"></button>
+        <button>Login<font color=green"></button>
+        <label for="cars">Choose a Option:</label>
+        <select name="option" id="option">
+            <option value="About ">About Us</option>
+            <option value="Contract ">Contract us</option>
+        </select>
+    </div>
+    <div class="register">
+        <div class="container">
+            <img src="~\Image\3.jpg" />
+            <form method="post" id="UpdateUserProfile" action="">
+                <h2> <font color=green">UpdateUserProfile Here</font></h2>
+                <label for="FirstName"><font color=green">Firstname:</font></label><br>
+                <input name="FirstName" placeholder=" Firstname"><br>
+                <label for=" Lastname"><font color=green"> Lastname</font></label><br>
+                <input name="LastName" placeholder="Lastname"><br>
+                <label for="Username"><font color=green">Username:</font></label><br>
+                <input name="Username" placeholder="Username"><br>
+                <label for=" Email"><font color=green"> Email</font></label><br>
+                <input name="Email" placeholder="Email"><br>
+                <label for="Password"><font color=green">Password</font></label><br>
+                <input name="Password" placeholder="Password"><br>
+                <label for="RetypePassword"><font color=green">RetypePassword</font></label><br>
+                <input name="RetypePassword" placeholder="RetypePassword"><br>
 
-<div class="container">
-    <img src="~\Image\3.jpg" />
-    <form method="post" id="UpdateUserProfile" action="">
-        <h2> <font color=green">UpdateUserProfile Here</font></h2>
-        <label for="FirstName"><font color=green">Firstname:</font></label><br>
-        <input name="FirstName" placeholder=" Firstname"><br>
-        <label for=" Lastname"><font color=green"> Lastname</font></label><br>
-        <input name="LastName" placeholder="Lastname"><br>
-        <label for="Username"><font color=green">Username:</font></label><br>
-        <input name="Username" placeholder="Username"><br>
-        <label for=" Email"><font color=green"> Email</font></label><br>
-        <input name="Email" placeholder="Email"><br>
-        <label for="Password"><font color=green">Password</font></label><br>
-        <input name="Password" placeholder="Password"><br>
-        <label for="RetypePassword"><font color=green">RetypePassword</font></label><br>
-        <input name="RetypePassword" placeholder="RetypePassword"><br>
+                <label for="Address">Address:</label><br>
+                <input name="Address" placeholder=" Address"><br>
+                <label for=" Mobile"> Lastname</label><br>
+                <input name="Mobile" placeholder="Mobile"><br>
+                <label for=" Gender"> Gender</label><br>
+                <input name="Gender" placeholder="Gender"><br>
+                <label for="Age">Age:</label><br>
+                <ul style="{display:inline;}">
+                    <li style="{display:inline;}">
+                        <select name="BirthDate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </li>
+                    <li style="{display:inline;}">
+                        <select name="BirthMonth">
+                            <option value="Jan">1</option>
+                            <option value="Feb">2</option>
+                            <option value="March">3</option>
+                            <option value="April">4</option>
+                        </select>
+                    </li>
+                    <li style="{display:inline;}">
+                        <select name="BirthYear">
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                        </select>
+                    </li>
 
-        <label for="Address">Address:</label><br>
-        <input name="Address" placeholder=" Address"><br>
-        <label for=" Mobile"> Lastname</label><br>
-        <input name="Mobile" placeholder="Mobile"><br>
-        <label for=" Gender"> Gender</label><br>
-        <input name="Gender" placeholder="Gender"><br>
-        <label for="Age">Age:</label><br>
-        <ul style="{display:inline;}">
-            <li style="{display:inline;}">
-                <select name="BirthDate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-            </li>
-            <li style="{display:inline;}">
-                <select name="BirthMonth">
-                    <option value="Jan">1</option>
-                    <option value="Feb">2</option>
-                    <option value="March">3</option>
-                    <option value="April">4</option>
-                </select>
-            </li>
-            <li style="{display:inline;}">
-                <select name="BirthYear">
-                    <option value="1996">1996</option>
-                    <option value="1997">1997</option>
-                    <option value="1998">1998</option>
-                    <option value="1999">1999</option>
-                </select>
-            </li>
+                </ul>
+                <button>Register</button><br />
+            </form>
 
-        </ul>
-        <button>Register</button><br />
-    </form>
+            <!--style="color:aqua" type="submit" name="Register"-->
 
-    <!--style="color:aqua" type="submit" name="Register"-->
-
-</div>
+        </div>

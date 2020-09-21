@@ -71,18 +71,22 @@ namespace Le_Vendue.Controllers
 
             if (login.Username == registerUser.Username && login.Password == registerUser.Password)
             {
-                Console.WriteLine("Login Successful");
+
 
             }
             else if (login.Username != registerUser.Username)
             {
                 Console.WriteLine("User doesn't exists");
+
             }
             else if (login.Username == registerUser.Username && login.Password != registerUser.Password)
             {
                 Console.WriteLine("Wrong Password");
+
             }
-            return View();
+            // RedirectToAction
+            return View("Index");
+
         }
         public ActionResult UpdateUser(UpdatUserProfileModel updateUserProfile)
         {
@@ -127,8 +131,11 @@ namespace Le_Vendue.Controllers
             {
                 getClient();
             }
-
-            FirebaseResponse getResponse = client.Get(@"AuctionCreate/" + bidding.AuctionId);
+            SetResponse setBidResponse = client.Set(@"Bid", biddingData);
+            //bidding.ProductName = auction.ProductName;
+            // bidding.ProductDetails = auction.ProductDetails;
+            // bidding.ReserveValue = auction.SetReservePrice;
+            // bidding.ClosingTime = auction.ClosingTime;
 
             //var getAuctionnumberResponse = client.Get(@"Auctionnumber");
             //var Auctionnumber = int.Parse(getAuctionnumberResponse.ResultAs<string>());

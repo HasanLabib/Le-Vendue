@@ -8,20 +8,27 @@ namespace Le_Vendue.Controllers
 {
     public class BiddingController : Controller
     {
+
         [HttpGet]
         public ActionResult Bidding()
         {
+
             return View();
         }
         public ActionResult Bidding(Bidding bidding)
         {
+
             DatabaseController databaseController = new DatabaseController();
+
             databaseController.BiddingOnDatabase(bidding);
             return View();
 
         }
     }
+
+
 }
+
 
 
 /*// GET: Bidding

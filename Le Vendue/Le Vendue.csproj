@@ -207,6 +207,7 @@
     <Compile Include="Models\AuctionCreate.cs" />
     <Compile Include="Models\AuctionInstanceCreateAndCheck.cs" />
     <Compile Include="Models\Bidding.cs" />
+    <Compile Include="Models\GetUserOrAuction.cs" />
     <Compile Include="Models\UniqueIdGenerator.cs" />
     <Compile Include="Models\UpdatUserProfileModel.cs" />
     <Compile Include="Models\Home.cs" />

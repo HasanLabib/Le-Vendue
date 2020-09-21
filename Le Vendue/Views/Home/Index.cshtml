@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+@using Le_Vendue.Models
+@using Le_Vendue.Controllers
 @Styles.Render("~/Content/Template/Index.css")"
 
 <meta charset="utf-8">
@@ -15,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <title>Auction Home</title>
-</head>
+
 <body>
 
     <header class="header">
@@ -34,10 +35,12 @@
                     </form>
                 </div>
                 <div class="col-md-1">
-                    <button class="rgstr-btn"><b>Register</b></button>
+                    <p><input class="rgstr-btn" type="button" value="Register" onclick="@("window.location.href='" + @Url.Action("Register", "Register") + "'");" /></p>
+                    <!--<button class="rgstr-btn"><b>Register</b></button>-->
                 </div>
                 <div class="col-md-1">
-                    <button class="log-btn"><b>Login</b></button>
+                    <p><input class="log-btn" " type="button" value="Login" onclick="@("window.location.href='" + @Url.Action("Login", "Login") + "'");" /></p>
+
                 </div>
                 <div class="col-md-3">
                     <div class="">
@@ -89,22 +92,27 @@
 
             <div class="row gallery">
                 <div class="col-md  image-border">
+
                     <img src="~/Content/Template/watch.jpg" style="width: 100%;">
                     <p style="text-align: center;margin-top: 15px;">Patek Philip Choronagraph</p>
                     <p style="text-align: center;">$25000</p>
                     <p style="text-align: center;">Time</p>
+                    <p style="text-align: center;margin-top: 15px;"><input type="button" value="Bid" onclick="@(" window.location.href='" + @Url.Action("Bidding", "Bidding") + "'");" /></p>
                 </div>
                 <div class="col-md offset-md-1 image-border">
                     <img src="~/Content/Template/shoe-1.jpg" style="width: 100%;">
                     <p style="text-align: center;margin-top: 15px;">Saint Laurent Man Boots</p>
                     <p style="text-align: center;">$1100</p>
                     <p style="text-align: center;">Time</p>
+                    <p style="text-align: center;margin-top: 15px;"><input type="button" value="Bid" onclick="@("window.location.href='" + @Url.Action("Bidding", "Bidding") + "'");" /></p>
+
                 </div>
                 <div class="col-md offset-md-1 image-border">
                     <img src="~/Content/Template/bag.jpg" style="width: 100%;">
                     <p style="text-align: center;margin-top: 15px;">Louis Vuton Handbag</p>
                     <p style="text-align: center;">$695</p>
                     <p style="text-align: center;">Time</p>
+                    <p style="text-align: center;margin-top: 15px;"><input type="button" value="Bid" onclick="@("window.location.href='" + @Url.Action("Bidding", "Bidding") + "'");" /></p>
                 </div>
             </div>
 

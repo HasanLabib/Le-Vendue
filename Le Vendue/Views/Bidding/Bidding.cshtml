@@ -4,8 +4,12 @@
 
     ViewBag.Title = "Bidding";
 }
-@Styles.Render("~/Content/Template/bidding.css")"
 
+
+@using Le_Vendue.Models
+@using Le_Vendue.Controllers
+
+@Styles.Render("~/Content/Template/bidding.css")"
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -118,18 +122,18 @@
                             <form method="post">
                                 <div class="container">
                                     <form method="post">
-                                        @{var Product = ; }
+
                                         <label for="Product Name">Product Name: </label><br>
-                                        <input type="text" id="Product Name" name="Product Name" value="" disabled><br>
+                                        <input type="text" id="Product Name" name="ProductName" value="Patek Philip Timepiece" readonly><br>
                                         <label for="Product Details">Product Details</label><br>
-                                        <input type="text" id="Product Details" name="ProductDetails" disabled value="" style="width: 240px;height: 100px;"><br>
+                                        <input type="text" id="Product Details" name="ProductDetails" value="It's an antique" readonly value="" style="width: 240px;height: 100px;"><br>
                                         <label for="ClosingTime"> ClosingTime</label><br>
-                                        <input type="text" id="ClosingTime" name="ClosingTime" value=""><br>
+                                        <input type="text" id="ClosingTime" name="ClosingTime" value="20-6-2020 02:12" readonly><br>
 
                                         <label for="HighestbidPrice">HighestbidPrice:</label><br>
-                                        <input type="text" id="HighestbidPrice" name=" HighestbidPrice" value="" disabled><br>
+                                        <input type="text" id="HighestbidPrice" name=" HighestbidPrice" value="" readonly><br>
                                         <label for=" Bid"> Bid</label><br>
-                                        <input type="text" id="Bid" name="Bid" placeholder="Bid"><br>
+                                        <input type="text" id="Bid" name="BidValue" placeholder="Bid"><br>
                                         <button style="color:aqua" type="submit" name="Submit">Submit</button><br />
                                     </form>
 
