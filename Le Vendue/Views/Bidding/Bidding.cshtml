@@ -22,7 +22,94 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <title>Auction Le Vendue</title>
-<header class="header">
+
+
+
+
+
+
+<link href="@Url.Content("~/Content/Template/login.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Template/style.css")" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="@Url.Content("~/fonts/material-icon/css/material-design-iconic-font.min.css")">
+<section class="sign-in">
+    <div class="container">
+        <div class="signin-content">
+            <div class="signin-image">
+                <figure><img src="https://watch-insider.com/wp-content/uploads/2014/10/PP_5175R_AMB_RECTO_PRESS_RVB.jpg" alt="Patek Philippe"></figure>
+
+            </div>
+
+
+
+
+            @{DatabaseController databaseController = new DatabaseController(); var v = DatabaseController.GetHighbid();
+
+
+            }
+            <input type="hidden" id="HighestbidPrice" name=" HighestbidPrice" value="@v" readonly><br>
+            @{var v1 = DatabaseController.GetAuction();}
+            <input type="hidden" id="Product Name" name="ProductName" value="@v1.ProductName" readonly>
+            <input type="hidden" id="Product Details" name="ProductDetails" value="@v1.ProductDetails" readonly />
+            <input type="hidden" id="ClosingTime" name="ClosingTime" value="@v1.ClosingTime" readonly />
+            <div class="signin-form">
+                <h2 class="form-title">Bid</h2>
+                <form method="POST" class="register-form" id="login-form">
+                    <div class="form-group">
+                        <label for="Product Name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" id="Product Name" name="ProductName" value="@v1.ProductName" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="Product Details"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="text" id="Product Details" name="ProductDetails" value="@v1.ProductDetails" readonly />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ClosingTime"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="text" id="ClosingTime" name="ClosingTime" value="@v1.ClosingTime" readonly />
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+                        <label for="HighestbidPrice"><i class="zmdi zmdi-lock"></i></label><br>
+
+                        <input type="text" id="HighestbidPrice" name=" HighestbidPrice" value="@v" readonly><br>
+                    </div>
+                    <div class="form-group">
+                        <label for=" Bid"><i class="zmdi zmdi-lock"></i></label><br>
+                        <input type="text" id="Bid" name="BidValue" placeholder="Bid"><br>
+                    </div>
+                    <div class="form-group form-button">
+                        <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                    </div>
+
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <header class="header">
     <div class="container">
         <div class="row">
             <div class="col-md-2">
@@ -90,9 +177,6 @@
 </header>
 
 
-<p><img src="~/Image/2.jpg" class="img-fluid image-margin" /></p>
-
-
 
 <section>
     <div class="container">
@@ -114,6 +198,7 @@
                 </div>
             </div>
             -->
+<!--
             <div class="col-sm-6" style=" {width:5px;height:5px;}">
                 <div class="card">
 
@@ -131,8 +216,7 @@
                                         <input type="text" id="ClosingTime" name="ClosingTime" value="20-6-2020 02:12" readonly><br>
 
                                         <label for="HighestbidPrice">HighestbidPrice:</label><br>
-                                        @{DatabaseController databaseController = new DatabaseController(); }
-                                        <input type="text" id="HighestbidPrice" name=" HighestbidPrice" value="@DatabaseController.GetHighbid()" readonly><br>
+
                                         <label for=" Bid"> Bid</label><br>
                                         <input type="text" id="Bid" name="BidValue" placeholder="Bid"><br>
                                         <button style="color:aqua" type="submit" name="Submit">Submit</button><br />
@@ -160,42 +244,7 @@
 </section>
 
 
-
-
-<footer class="footer">
-    <div class="container">
-        <div class="row footer-border">
-            <div class="col-md-2">
-                <img src="~/Content/Template//mobile.jpg" class="img-fluid">
-            </div>
-            <div class="col-md-3 footer-margin">
-                <p>Shop With Confidence</p>
-                <p>Since 2002,LiveAuctioneers has made exceptional items available for sale purchase in secure online auctions.</p>
-            </div>
-            <div class="col-md-5 footer-margin">
-                <img src="~/Content/Template//logo.jpg" class="img-fluid">
-            </div>
-            <div class="col-md-2 footer-margin">
-                <p>Company</p>
-                <button class="footer-btn">About</button>
-            </div>
-
-        </div>
-
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
+    -->
 <!--
 
                 <form method="post">

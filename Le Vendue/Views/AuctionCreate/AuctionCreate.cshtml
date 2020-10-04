@@ -13,28 +13,170 @@
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
 
-<title>Account Form</title>
+<link href="@Url.Content("~/Content/Template/style.css")" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="@Url.Content("~/fonts/material-icon/css/material-design-iconic-font.min.css")">
+
+<div class="main">
+
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Create an Auction</h2>
+                    <form method="POST" class="register-form" id="register-form">
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="ProductName" id="name" placeholder="Product Name" />
+
+                        </div>
+                        <div class="form-group">
+
+                            <label for="Product Details"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="ProductDetails" id="name" placeholder="Product Details" />
 
 
-<header class="header">
-    <div class="container header-border">
-        <div class="row">
+                        </div>
+                        <div class="form-group">
+                            <label for="Reserve Price"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="text" name="SetReservePrice" id="pass" placeholder="Reserve Price" />
 
-            <div class="col-md-2">
-                <p class="header-text">AUCTION</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="ClosingTimes"><i class="zmdi zmdi-lock-outline"></i></label>
+
+
+                            <input type="datetime" name="ClosingTime" placeholder="ClosingTime Details"><br />
+                            <br />
+                            @{ var AuctionIdCreate = UniqueIdGenerator.generateUniqueID();}
+                            <input type="hidden" name="AuctionId" value="@AuctionIdCreate" />
+
+                        </div>
+
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="Create" />
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-image">
+                    <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRUrViGIqyGFskaBZJYaJZUOs3Cub3LPUQc_w&usqp=CAU" alt="sing up image"></figure>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+
+
+    <header class="header">
+        <div class="container header-border">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <p class="header-text">Auction</p>
+
+                </div>
+
+                <div class="col-md-6">
+                    <form>
+                        <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                        <input type="text" placeholder="" name="search2" class="search-bar">
+
+
+                    </form>
+                </div>
 
             </div>
 
-            <div class="col-md-6">
-                <form>
-                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
-                    <input type="text" placeholder="" name="search2" class="search-bar">
 
 
-                </form>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="create-text">CREATE AUCTION</p>
+                </div>
             </div>
+            <form method="post">
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-md-2 offset-md-3">
+                        <p><b>ADD IMAGE</b></p>
+                    </div>
+                    <div class="col-md-4 add-image">
+                        <p>Double click to add image</p>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-md-2 offset-md-3 ">
+                        <p><b> <label for="Product Name">Product Name: </label></b></p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><b> <label for="Product Name">Product Name: </label></b></p>
+                        <input type="text" name="ProductName" placeholder="Product Name" style="width: 100%;">
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-md-2 offset-md-3">
+                        <p><b><label for="Product Details">Product Details</label></b></p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><b><label for="Product Details">Product Details</label></b></p>
+                        <input type="text" name="ProductDetails" placeholder="Product Details" style="width: 100%;">
+                    </div>
+
+
+
+                </div>
+
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-md-2 offset-md-3">
+                        <p><b><label for="Product Details">Product Details</label></b></p>
+                        <input type="text" name="ProductDetails" placeholder="Product Details" style="width: 100%;">
+                        <p><b><label for="Reserve Price"> Reserve Price</label></b></p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><b><label for="Product Details">Product Details</label></b></p>
+                        <input type="text" name="ProductDetails" placeholder="Product Details" style="width: 100%;">
+                        <p><b><label for="Reserve Price"> Reserve Price</label></b></p>
+                        <input type="text" name="SetReservePrice" placeholder="Reserve Price" style="width: 100%;">
+                    </div>
+
+
+                    <br>
+                    <input><br>
+
+
+                </div>
+
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-md-2 offset-md-3">
+                        <p><b><label for="Closing Time"> ClosingTime</label></b></p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <input type="datetime" name="ClosingTime" placeholder="ClosingTime Details" style="width: 100%;"><br />
+                        <br />
+
+                        <button class="sub-btn">SUBMIT</button>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </form>
+
 
         </div>
 
@@ -44,158 +186,32 @@
 
 
 
-        <div class="row">
-            <div class="col-md-12">
-                <p class="create-text">CREATE AUCTION</p>
-            </div>
-        </div>
+    </header>
+
+
+
+
+
+        -->
+    <!--
+    <h2>AuctionCreate</h2>
+
+    <div class="container">
         <form method="post">
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-md-2 offset-md-3">
-                    <p><b>ADD IMAGE</b></p>
-                </div>
-                <div class="col-md-4 add-image">
-                    <p>Double click to add image</p>
-                </div>
-            </div>
+            <label for="Product Name">Product Name: </label><br>
+            <input type="text" name="ProductName" placeholder="Product Name"><br>
+            <label for="Product Details">Product Details</label><br>
+            <input type="text" name="ProductDetails" placeholder="Product Details"><br>
+            <label for="Closing Time"> ClosingTime</label><br>
+            <input type="datetime" name="ClosingTime" placeholder="ClosingTime Details"><br>
+            <label for="Reserve Price"> Reserve Price</label><br>
+            <input type="text" name="SetReservePrice" placeholder="Reserve Price"><br>
 
-            
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-md-2 offset-md-3 ">
-                    <p><b> <label for="Product Name">Product Name: </label></b></p>
-                </div>
-                <div class="col-md-4 ">
-                    <input type="text" name="ProductName" placeholder="Product Name" style="width: 100%;">
-                </div>
-            </div>
-
-
-
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-md-2 offset-md-3 ">
-                    <p><b>ITEM QUANTITY</b></p>
-                </div>
-                <div class="col-md-4 ">
-                    <input type="" name="" style="width: 100%;">
-                </div>
-            </div>
-
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-md-2 offset-md-3">
-                    <p><b><label for="Product Details">Product Details</label></b></p>
-                </div>
-                <div class="col-md-4 ">
-                    <input type="text" name="ProductDetails" placeholder="Product Details" style="width: 100%;">
-                </div>
-
-
-
-            </div>
-
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-md-2 offset-md-3">
-                    <p><b><label for="Reserve Price"> Reserve Price</label></b></p>
-                </div>
-                <div class="col-md-4 ">
-                    <input type="text" name="SetReservePrice" placeholder="Reserve Price" style="width: 100%;">
-                </div>
-
-
-                <br>
-                <input><br>
-
-
-            </div>
-
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-md-2 offset-md-3">
-                    <p><b><label for="Closing Time"> ClosingTime</label></b></p>
-                </div>
-                <div class="col-md-4 ">
-                    <input type="datetime" name="ClosingTime" placeholder="ClosingTime Details" style="width: 100%;"><br />
-                    <br />
-                    @{ var AuctionIdCreate = UniqueIdGenerator.generateUniqueID();}
-                    <input type="hidden" name="AuctionId" value="@AuctionIdCreate" />
-                    <button class="sub-btn">SUBMIT</button>
-                </div>
-
-
-
-
-            </div>
-
-
-
-
+            <input type="hidden" name="AuctionId" value="" />
+            <button style="background-color:aqua" type="submit" name="Register">Register</button><br />
         </form>
 
 
-    </div>
-
-
-
-
-
-
-
-</header>
-
-
-
-
-<footer class="footer">
-    <div class="container">
-        <div class="row footer-border">
-            <div class="col-md-2">
-                <img src="~/Content/Template/mobile.jpg" class="img-fluid">
-            </div>
-            <div class="col-md-3 footer-margin">
-                <p>Shop With Confidence</p>
-                <p>Since 2002,LiveAuctioneers has made exceptional items available for sale purchase in secure online auctions.</p>
-            </div>
-            <div class="col-md-5 footer-margin">
-                <img src="~/Content/Template/logo.jpg" class="img-fluid">
-            </div>
-            <div class="col-md-2 footer-margin">
-                <p>Company</p>
-                <button class="footer-btn">About</button>
-            </div>
-
-        </div>
 
     </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<h2>AuctionCreate</h2>
-
-<div class="container">
-    <form method="post">
-        <label for="Product Name">Product Name: </label><br>
-        <input type="text" name="ProductName" placeholder="Product Name"><br>
-        <label for="Product Details">Product Details</label><br>
-        <input type="text" name="ProductDetails" placeholder="Product Details"><br>
-        <label for="Closing Time"> ClosingTime</label><br>
-        <input type="datetime" name="ClosingTime" placeholder="ClosingTime Details"><br>
-        <label for="Reserve Price"> Reserve Price</label><br>
-        <input type="text" name="SetReservePrice" placeholder="Reserve Price"><br>
-        
-        <input type="hidden" name="AuctionId" value="" />
-        <button style="background-color:aqua" type="submit" name="Register">Register</button><br />
-    </form>
-
-
-
-</div>
-    -->
+        -->

@@ -5,8 +5,9 @@ using System.Web;
 
 namespace Le_Vendue.Models
 {
-    public class Home
+    public class Index
     {
+        public String AuctionId { get; set; }
 
     }
 }

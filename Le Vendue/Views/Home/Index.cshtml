@@ -39,7 +39,7 @@
                     <!--<button class="rgstr-btn"><b>Register</b></button>-->
                 </div>
                 <div class="col-md-1">
-                    <p><input class="log-btn" " type="button" value="Login" onclick="@("window.location.href='" + @Url.Action("Login", "Login") + "'");" /></p>
+                    <p><input class="log-btn" type="button" value="Login" onclick="@("window.location.href='" + @Url.Action("Login","Login") + "'");" /></p>
 
                 </div>
                 <div class="col-md-3">
@@ -49,8 +49,8 @@
 
                             <div id="myLinks">
 
-                                <a href="#contact">About Us</a>
-                                <a href="#about">Contact Us</a>
+                                <input class="log-btn" type="button" value="About Us" onclick="@("window.location.href='" + @Url.Action("About", "Home") + "'");" />
+                                <input class="log-btn" type="button" value="Contact Us" onclick="@("window.location.href='" + @Url.Action("Contact", "Home") + "'");" />
                             </div>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                                 <i class="fa fa-bars"></i>
@@ -67,18 +67,31 @@
     </header>
 
 
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="~/Content/Template/shoe.jpg" class="banner-img">
+            </div>
+        </div>
+    </div>
 
     <section class="main">
+
         <div class="container image-section">
 
 
+
+
+
+
+
+            <!--
             <div class="row">
                 <div class="col-md-12">
                     <img src="~/Content/Template/shoe.jpg" class="banner-img">
                 </div>
             </div>
-
+            -->
 
             <div class="row">
                 <div class="col-md-6">
@@ -104,7 +117,11 @@
                     <p style="text-align: center;margin-top: 15px;">Saint Laurent Man Boots</p>
                     <p style="text-align: center;">$1100</p>
                     <p style="text-align: center;">Time</p>
-                    <p style="text-align: center;margin-top: 15px;"><input type="button" value="Bid" onclick="@("window.location.href='" + @Url.Action("Bidding", "Bidding") + "'");" /></p>
+                    <p style="text-align: center;margin-top: 15px;">
+                        <input type="hidden" name="AuctionId" value="M7ylAsLhPGB" />
+                        <input type="button" value="Bid" onclick="@("window.location.href='" + @Url.Action("Bidding", "Bidding") + "'");" />
+
+                    </p>
 
                 </div>
                 <div class="col-md offset-md-1 image-border">
@@ -156,31 +173,6 @@
         </div>
     </section>
 
-
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row footer-border">
-                <div class="col-md-2">
-                    <img src="~/Content/Template/mobile.jpg" class="img-fluid">
-                </div>
-                <div class="col-md-3 footer-margin">
-                    <p>Shop With Confidence</p>
-                    <p>Since 2002,LiveAuctioneers has made exceptional items available for sale purchase in secure online auctions.</p>
-                </div>
-                <div class="col-md-5 footer-margin">
-                    <img src="~/Content/Template/logo.jpg" class="img-fluid">
-                </div>
-                <div class="col-md-2 footer-margin">
-                    <p>Company</p>
-                    <button class="footer-btn">About</button>
-                </div>
-
-            </div>
-
-        </div>
-    </footer>
 
 
 
